@@ -1,5 +1,6 @@
 from typing import List
 
+import click_spinner
 import pytse_client as tse
 import typer
 
@@ -30,4 +31,5 @@ def buy_signals(
 
 @app.command()
 def update():
-    tse.download(symbols="all", write_to_csv=True)
+    with click_spinner.spinner():
+        tse.download(symbols="all", write_to_csv=True)
