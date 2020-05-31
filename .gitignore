@@ -1,0 +1,9 @@
+/venv
+/.idea/
+/symbols/
+
+
+/tickers_data
+/*.egg-info
+/dist
+
