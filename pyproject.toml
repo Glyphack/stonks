@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stonks-trader"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = ["glyphack <sh.hooshyari@gmail.com>"]
 
@@ -17,6 +17,7 @@ matplotlib = "*"
 ta = "*"
 pandas-ta = "0.1.39b"
 requests = "*"
+click-spinner = "0.1.10"
 
 
 [tool.poetry.dev-dependencies]
