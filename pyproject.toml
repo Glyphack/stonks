@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stonks-trader"
-version = "0.1.5-alpha"
+version = "0.2.0"
 description = ""
 authors = ["glyphack <sh.hooshyari@gmail.com>"]
 
