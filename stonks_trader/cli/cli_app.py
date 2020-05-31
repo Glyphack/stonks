@@ -25,8 +25,11 @@ def buy_signals(
                 strategy.analyze()
                 if not strategy.is_buy_signal():
                     result.remove(symbol)
-        for symbol in result:
+        for i, symbol in enumerate(result):
+            print(i + 1)
+            print(symbol)
             print(tse.Ticker(symbol).url)
+            print("------------------------------------")
 
 
 @app.command()
