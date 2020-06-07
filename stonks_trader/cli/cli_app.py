@@ -23,7 +23,7 @@ def buy_signals(
                     df=df,
                 )
                 strategy.analyze()
-                if not strategy.is_buy_signal():
+                if not strategy.is_buy_signal() and symbol in result:
                     result.remove(symbol)
         for i, symbol in enumerate(result):
             print(i + 1)
